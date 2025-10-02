@@ -33,11 +33,18 @@
     .file-upload:hover { background: #bae6fd; }
     .file-upload input[type="file"] { display: none; }
     .file-upload span { font-size: 0.95rem; color: #0369a1; }
+     .file-upload-group {
+      display: flex;          /* 가로 정렬 */
+      gap: 12px;              /* 버튼 사이 간격 */
+      justify-content: center;/* 가운데 정렬 (왼쪽 정렬 원하면 flex-start) */
+}
     canvas {
       border: 2px solid var(--border); border-radius: 16px; background: #fff;
       box-shadow: 0 6px 16px rgba(0,0,0,.08); width: 100%; max-width: 700px; aspect-ratio: 4/3;
       touch-action: none;
-    }
+ 
+   
+
     .buttons { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px; }
     button {
       padding: 10px 14px; border: none; border-radius: 10px; font-size: 14px; cursor: pointer; color: #fff;
